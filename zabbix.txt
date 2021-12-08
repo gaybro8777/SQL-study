@@ -1,0 +1,22 @@
+测试环境系统：Censo7.3
+搭建环境：MySQL5.6、zabbix
+防火墙设置临时关闭：systemctl stop firewalld.service
+
+
+4.0zabbix官方文档地址
+https://www.zabbix.com/documentation/4.0/zh/manual/installation/install
+
+下载
+https://www.zabbix.com/cn/download
+
+访问时建议临时关闭防火墙：systemctl stop firewalld.serice
+
+访问地址：http://192.168.245.131/zabbix
+
+Zabbix frontend is ready! The default user name is Admin, password zabbix.
+默认用户名：Admin
+密码：zabbix
+
+
+tips：查看自己部署的历史命令记录并导出
+history  >> /opt/backup/history.txt
