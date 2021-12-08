@@ -11,7 +11,7 @@ DM8官网直通车：[https://www.dameng.com/view_61.html](https://www.dameng.co
 [https://www.dameng.com/ucenter/docs.html](https://www.dameng.com/ucenter/docs.html)
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/3eabbe2a2f6c4210860e28496d0b6037.png?x-oss-process=,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBA6b6Z6IW-5LiH6YeMc2t5,size_20,color_FFFFFF,t_70,g_se,x_16#)
 
-**系统检测，参考官网技术文档，一般而言可以忽略这一步**
+**系统检测，参考官网技术文档**
 
 ```sql
 #获取系统位数
