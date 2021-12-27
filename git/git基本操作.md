@@ -25,7 +25,20 @@ git commit -m "1.0.1" #提交
 git push 仓库地址  #推送至服务器
 ```
 
+
+
+测试
+
+
+
+<img src="https://gitee.com/dywangk/img/raw/master/images/IMG_20211215_001451.jpg" style="zoom:30%;" />
+
+
+
+<img src="https://gitee.com/dywangk/img/raw/master/images/MySQL.png" style="zoom:50%;" />
+
 ## 一、初次运行 Git 前的配置
+
 Git 配置 git config git 命令
 在新的系统上，我们一般都需要先配置下自己的 Git 工作环境。配置工作只需一次，以后升级时还会沿用现在的配置。当然，如果需要，你随时可以用相同的命令修改已有的配置。
 
