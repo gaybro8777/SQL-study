@@ -31,7 +31,7 @@ git push 仓库地址  #推送至服务器
 
 
 
-<img src="https://gitee.com/dywangk/img/raw/master/images/IMG_20211215_001451.jpg" style="zoom:30%;" />
+<img src="https://gitee.com/dywangk/img/raw/master/images/IMG_20211215_001451.jpg" style="zoom:20%;" />
 
 
 
