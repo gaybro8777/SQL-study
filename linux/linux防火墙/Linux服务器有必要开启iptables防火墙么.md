@@ -210,7 +210,7 @@ firewall-cmd  --zone=internal --list-all
 终端执行：`firewall-config`
 
 
-![](Snipaste_2022-01-03_20-27-59_proc.jpg)
+![](https://gitee.com/dywangk/img/raw/master/images/firewalld-config_proc50.jpg)
 
 ## 三、iptables防火墙工具
 
@@ -503,6 +503,7 @@ ufw deny 21/tcp
 ```
 
 3.4、增加一条表示拒绝的规则
+
 ```powershell
 ufw reject
 ```
@@ -512,12 +513,6 @@ ufw reject
 ```powershell
 less /etc/services
 ```
-
-
-
-
-
-
 
 
 <H5 align=center><a href="https://blog.csdn.net/Tolove_dream">by 龙腾万里sky 原创不易，白嫖有瘾</a></H5>
