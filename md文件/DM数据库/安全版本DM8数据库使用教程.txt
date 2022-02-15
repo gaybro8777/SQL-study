@@ -1,0 +1,28 @@
+一、必须用SYSDBA执行的操作
+--1.只能使用SYSDBA用户创建普通用户
+例如创建TEST用户：
+CREATE USER TEST;
+--2.授权DBA给TEST用户
+GRANT DBA TO TEST;
+--3.创建默认表空间并且设置大小为1024
+CREATE TABLESPACE TEST DATAFILE '/opt/dmdbms/data/DAMENG/TEST.dbf' size 1024;
+--4.授权resource，public给用户
+GRANT RESOURCE,PUBLIC TO TEST;
+二、必须用SYSSSO执行的操作
+1.只能使用安全用户SYSSSO设置密码、修改密码、解锁用户以及赋予表空间
+2.给创建的用户TEST设置密码
+ALTER USER TEST IDENTIFIED BY 'SYSOFT1234'
+3.赋予默认表空间
+ALTER USER default tablespace TEST;
+4.密码过期问题处理
+alter user TEST limit password_life_time UNLIMITED,
+PASSWORD_LOCK_TIME UNLIMITED,
+PASSWORD_GRACE_TIME UNLIMITED,
+FAILED_LOGIN_ATTEMPS UNLIMITED,
+PASSWORD_REUSE_TIME UNLIMITED,
+PASSWORD_REUSE_MAX UNLIMITED;
+5完成以上步骤，开始登录当前用户TEST，导入用户数据表结构
+5.1、使用终端
+5.1.1、输入命令：/opt/dmdbms/bin/tool/manager，等待启动达梦8可视化客户端
+5.1.2、输入命令：/opt/dmdbms/bin/tool/dts，等待启动达梦8可视化数据迁移工具
+5.2、直接找到manager所在目录：/opt/dmdbms/bin/tool/manager，然后点击manager运行达梦8可视化客户端
