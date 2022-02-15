@@ -1,25 +1,29 @@
-# 前言
-
-实际运维中，不仅仅是掌握SQL语句的使用以及优化。
-
-你会遇到各式各样的问题，此时往往不知如何下手。思考的方向不好确定，但是可以通过日志分析。
-
-常用的动态参数以及数据字典掌握尤为重要，辅助我们排查问题。
-
-
+实际运维中，不仅仅是掌握SQL语句的使用以及优化。你会遇到各式各样的问题，此时往往不知如何下手。思考的方向不好确定，但是可以通过日志分析。常用的动态参数以及数据字典掌握尤为重要，辅助我们排查问题。
 
 # 正文
 
 ## 一、基础优化篇
 
 ### 1、密码过期处理
+
+1.1、登录到sqlplus
+
+```bash
+-- 登陆sys
+sqlplus /nolog
+-- 连接数据库
+conn sys/password@orcl as sysdba
+```
+
+1.2、执行SQL语句查询密码期限，修改密码期限为UNLIMITED。
+
 ```sql
---查询密码期限
+-- 查询密码期限
 SELECT *
   FROM dba_profiles s
  WHERE s.profile = 'DEFAULT'
    AND resource_name = 'PASSWORD_LIFE_TIME'
---修改密码期限为无限制
+-- 修改密码期限为无限制
  ALTER PROFILE DEFAULT LIMIT PASSWORD_LIFE_TIME UNLIMITED;
 ```
 
@@ -37,11 +41,27 @@ SELECT *
    spool off;
 ```
 
-2.2、连接sqlplus执行createsql.sql
+2.2、设置参数限制
 
-2.3、在你设置的路径下形成allocate.sql
+```bash
+alter system set deferred_segment_creation=false;
+```
 
-2.4、执行allocate.sql，解决Oracle空表无法导出的问题
+2.3、连接sqlplus执行createsql.sql
+
+打开cmd窗口执行createsql.sql脚本
+
+```bash
+@ C:\createsql.sql;
+```
+
+2.4、在你设置的路径下形成allocate.sql，继续在cmd命令窗口执行allocate.sql脚本
+
+```bash
+@ C:\allocate.sql;
+```
+
+完美解决Oracle空表无法导出的问题。
 
 ## 二、实战参考篇
 
@@ -50,8 +70,6 @@ SELECT *
 1.1、**真实运维场景**
 
 基于真实运维场景进行分析，环境原因，不得在同一台服务器上建立双实例。结果在某一天，服务器日志量写入过多，导致服务器Oracle实例关闭后无法启动。建议：先清理日志，**清理日志之前先做好备份**，然后手动使用命令重启监听服务。**至于如何查询日志所在服务器位置，下面的Oracle常用动态性能视图有介绍**。
-
-
 
 关于表空间：之前公司默认都使用USERS，临时表空间选择TEMP。
 
@@ -331,6 +349,4 @@ select empno, ename
  where exists (select deptno from scott.dept where loc != 'DALLAS');
  ```
 
-
-
-<H5 align=center><a href="https://blog.csdn.net/Tolove_dream">by 龙腾万里sky 原创不易，白嫖有瘾</a></H5>
+<H5 align=center><a href="https://github.com/cnwangk/SQL-study">by 龙腾万里sky</a></H5>
