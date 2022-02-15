@@ -15,8 +15,8 @@ pdf文件存放导出的pdf文件格式文档，md文件则是使用markdown格�
   - [SQL](https://github.com/cnwangk/SQL-study/tree/master/pdf/SQL)：存放MySQL以及Oracle数据库实战总结、redis入门指南详细教程
   - [markdown](https://github.com/cnwangk/SQL-study/tree/master/pdf/markdown)：markdown工具VScode与Typora、图床工具PicGo
   - [git](https://github.com/cnwangk/SQL-study/tree/master/pdf/git)
-  - git入门教程，配合github与gitee实战演练搭建个人博客网站
-  - git文件与索引管理
+    - git入门教程，配合github与gitee实战演练搭建个人博客网站
+    - git文件与索引管理
   - [program_live](https://github.com/cnwangk/SQL-study/tree/master/pdf/program_live)：程序人生，个人读书总结
 
 - [md文件目录](https://github.com/cnwangk/SQL-study/tree/master/md)
@@ -38,5 +38,4 @@ pdf文件存放导出的pdf文件格式文档，md文件则是使用markdown格�
   - [zabbix](https://github.com/cnwangk/SQL-study/tree/master/md/zabbix)：使用MySQL搭建分布式监控系统。
   - Kafka：准备中。。。
   - RocketMQ：准备中。。。
-
 
