@@ -1,18 +1,18 @@
 # SQL STUDY
 
+**学习成长之路**，持续更新优化中，未完待续...
+
 老夫有一颗少女心，哎呀不小心暴露了我的小九九：
 
 ![](https://gitee.com/dywangk/img/raw/master/images/tolove_harem_gold.jpg)
 
-**成长之路**，未完待续...
-
 仓库目录结构说明：**已经存放markdown格式和PDF格式的文章全部做了超链接**。
 
-- PDF[整合完善中](https://github.com/cnwangk/SQL-study/tree/master/PDF%E6%95%B4%E5%90%88%E5%AE%8C%E5%96%84%E4%B8%AD)：整理的PDF文件文章。进行了分类，数据库方面知识存在SQL目录中。
+- PDF[整合完善中](https://github.com/cnwangk/SQL-study/tree/master/PDF%E6%96%87%E4%BB%B6)：整理的PDF文件文章。进行了分类，数据库方面知识存在SQL目录中。
   - [program_live](https://github.com/cnwangk/SQL-study/tree/master/PDF%E6%95%B4%E5%90%88%E5%AE%8C%E5%96%84%E4%B8%AD/program_live)：程序人生，个人读书总结
   - [软件实施](https://github.com/cnwangk/SQL-study/tree/master/PDF%E6%95%B4%E5%90%88%E5%AE%8C%E5%96%84%E4%B8%AD/%E8%BD%AF%E4%BB%B6%E5%AE%9E%E6%96%BD%E7%B3%BB%E5%88%97)：软件实施面试题
   - [nginx](https://github.com/cnwangk/SQL-study/tree/master/PDF%E6%95%B4%E5%90%88%E5%AE%8C%E5%96%84%E4%B8%AD/nginx)：nginx入门到实践，反向代理与负载均衡
-  - [SQL](https://github.com/cnwangk/SQL-study/tree/master/PDF%E6%95%B4%E5%90%88%E5%AE%8C%E5%96%84%E4%B8%AD/SQL)：存放MySQL以及Oracle数据库实战总结、redis入门指南详细教程
+  - [SQL](https://github.com/cnwangk/SQL-study/tree/master/PDF%E6%96%87%E4%BB%B6/SQL)：存放MySQL以及Oracle数据库实战总结、redis入门指南详细教程
   - [markdown](https://github.com/cnwangk/SQL-study/tree/master/PDF%E6%95%B4%E5%90%88%E5%AE%8C%E5%96%84%E4%B8%AD/markdown)：markdown工具VScode与Typora、图床工具PicGo
   - [git](https://github.com/cnwangk/SQL-study/tree/master/PDF%E6%95%B4%E5%90%88%E5%AE%8C%E5%96%84%E4%B8%AD/git)
     - git入门教程，配合github与gitee实战演练搭建个人博客网站
