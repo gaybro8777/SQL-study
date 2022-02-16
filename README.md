@@ -30,7 +30,7 @@ pdf文件存放导出的pdf文件格式文档，md文件则是使用markdown格�
   - [nginx](https://github.com/cnwangk/SQL-study/tree/master/md/nginx)：nginx中间件实战总结。
   - [MySQL](https://github.com/cnwangk/SQL-study/tree/master/md/SQL/MySQL)：MySQL数据库知识总结。
   - [Oracle](https://github.com/cnwangk/SQL-study/tree/master/md/SQL/Oracle)：Oracle数据库实战经验分享。
-  - [DM数据库](https://github.com/cnwangk/SQL-study/tree/master/md/SQL/DM%E6%95%B0%E6%8D%AE%E5%BA%93)：国产DM8数据库实战经验分享。
+  - [DM8](https://github.com/cnwangk/SQL-study/tree/master/md/SQL/DM%E6%95%B0%E6%8D%AE%E5%BA%93)：国产DM8数据库实战经验分享。
   - [Redis](https://github.com/cnwangk/SQL-study/tree/master/md/Redis)：Redis入门以及实战经验分享。
   - [git](https://github.com/cnwangk/SQL-study/tree/master/md/git)：git入门指南以及搭建工作环境。
   - [markdown_tools](https://github.com/cnwangk/SQL-study/tree/master/md/markdown_tools)：markdown工具使用，搭建免费图床。
